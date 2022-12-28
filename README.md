@@ -1,6 +1,9 @@
 # 👏Review of Deep Face Spoofing and Anti-Spoofing🎭 #
 
-![dfs_dfas](./pictures/DFS%20and%20DFAS.png)
+<p align=center>
+   <img src="./pictures/DFS%20and%20DFAS.png" width="720">
+<p\ >
+
 This is the accompanying webpage for "Deep Facial Spoofing and Deep Face Anti-Spoofing: a Systematic Literature Review", a critical review of recent progress in deep learning methods for face spoofing and anti-spoofing.
 
 ## Introduction
@@ -24,11 +27,13 @@ _____________
 _____________
 
 <a name="DFS"></a>
-### Deep Face Spoofing ####
-<img src="./pictures/taxonomy_dfs.png" width="720">
+### 1️⃣Deep Face Spoofing ####
+<p align=center>
+   <img src="./pictures/taxonomy_dfs.png" width="720">
+<p\ >
 
 <a name="DFS1"></a>
-#### 1️⃣DFS1: Template and Model Inversion
+#### DFS1: Template and Model Inversion
 
 <p align="center">
    <img src="./pictures/Deep%20Template%20Reconstruction.png" style="width:300pt"><br />
@@ -49,7 +54,7 @@ _____________
 | AMI               | 2019 | Model inversion             | Transposed CNN                             | Black                  | S              |
 
 <a name="DFS2"></a>
-#### 2️⃣DFS2: Adversarial Examples
+#### DFS2: Adversarial Examples
 <p align="center">
    <img src="./pictures/Imperceptible%20Perturbations.png" width="360"><br />
    <strong>Imperceptible Perturbations<br /><br />
@@ -57,7 +62,7 @@ _____________
    <strong>Adversarial Landmarks<br /><br />
    <img src="./pictures/Adversarial%20Makeup%20Effects.png" width="360"><br />
    <strong>Adversarial Makeup Effects<br /><br />
- <p\>
+ <p\ >
     
 | Method            | Year | Category                    | Backbone                                   | White/Grey/Black Box   | Static/Dynamic |
 | ----------------- | ---- | --------------------------- | ------------------------------------------ | ---------------------- | -------------- |
@@ -74,7 +79,7 @@ _____________
 | DACNM             | 2021 | Adversarial makeup effects  | Facenet                                    | Black                  | D              |
 
 <a name="DFS3"></a>
-#### 3️⃣DFS3: Identity-Agnostic Faces
+#### DFS3: Identity-Agnostic Faces
 <p align="center">
    <img src="./pictures/Morph%20Face.png" width="360"><br />
    <strong>Deep Template Inversion<br /><br />
@@ -93,19 +98,31 @@ _____________
 
 _____________
 <a name="DFAS"></a>
-### Deep Face-Anti Spoofing ####
-![tax_dfas](https://github.com/dhimasarief/DFS_DFAS/blob/main/taxonomy_dfas.png)
+### 2️⃣Deep Face-Anti Spoofing ####
+<p align=center>
+   <img src="./pictures/taxonomy_dfas.png" width="720">
+<p\ >
 
 <a name="DFAS1"></a>
-#### 1️⃣DFAS1: DFAS asDeep Discriminative Learning
-
+#### DFAS1: DFAS asDeep Discriminative Learning
+<p align="center">
+   <img src="./pictures/Single%20Modality.png" width="360"><br />
+   <strong>DFAS with Single Modality<br /><br />
+   <img src="./pictures/Multiple%20Modalities.png" width="360"><br />
+   <strong>DFAS with Multiple Modalities<br /><br />
+ <p\>
 
 <a name="DFAS2"></a>
-#### 2️⃣DFAS2: DFAS as Deep Generative Learning
-
+#### DFAS2: DFAS as Deep Generative Learning
+<p align="center">
+   <img src="./pictures/Single%20Modality.png" width="360"><br />
+   <strong>Auto-Encoder-based DFAS<br /><br />
+   <img src="./pictures/Multiple%20Modalities.png" width="360"><br />
+   <strong>GAN-based DFAS<br /><br />
+ <p\>
 
 <a name="DFAS3"></a>
-#### 3️⃣DFAS3: DFAS as Joint/Hybrid Learning
+#### DFAS3: DFAS as Joint/Hybrid Learning
 
 <a name="Joint1"></a>
 ##### Joint Traditional and Deep Architectures
