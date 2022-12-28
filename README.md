@@ -2,14 +2,14 @@
 
 <p align=center>
    <img src="./pictures/DFS%20and%20DFAS.png" width="720">
-<p\ >
+<p\>
 
 This is the accompanying webpage for "Deep Facial Spoofing and Deep Face Anti-Spoofing: a Systematic Literature Review", a critical review of recent progress in deep learning methods for face spoofing and anti-spoofing.
 
 ## Introduction
 We present taxonomies and provide an up-to-date and critical review of recent deep-face spoofing (DFS) and deep face anti-spoofing (DFAS) models. We identify three main groups of DFS mechanisms: template and model inversion, adversarial examples, and identity-agnostic faces. Likewise, DFAS mechanisms could be divided into three categories: DFAS as deep discriminative learning, DFAS as generative learning, and DFAS as joint or hybrid learning.
 
-🔔This web page will be continuously updated with new studies🔥
+🔔This webpage will be continuously updated with new studies🔥
 _____________
 
 ## Contents ##
@@ -30,19 +30,20 @@ _____________
 ### 1️⃣Deep Face Spoofing ####
 <p align=center>
    <img src="./pictures/taxonomy_dfs.png" width="720">
-<p\ >
+<p\>
 
 <a name="DFS1"></a>
-#### DFS1: Template and Model Inversion
+#### DFS1: Template and Model Inversion ####
 
 <p align="center">
    <img src="./pictures/Deep%20Template%20Reconstruction.png" style="width:300pt"><br />
-   <strong>Deep Template Inversion<br /><br />
+   <b>Deep Template Inversion</b><br /><br />
    <img src="./pictures/Model%20Inversion.png" style="width:300pt"><br />
-   <strong>Deep Model Inversion<br /><br />
+   <b>Deep Model Inversion</b><br /><br />
 <p\>
-    
-| Method            | Year | Category                    | Backbone                                   | White/Grey/Black Box   | Static/Dynamic |
+
+
+ Method            | Year | Category                    | Backbone                                   | White/Grey/Black Box   | Static/Dynamic |
 | ----------------- | ---- | --------------------------- | ------------------------------------------ | ---------------------- | -------------- |
 | NbNet             | 2019 | Deep template inversion     | De-CNN                                     | Black                  | S              |
 | GHDFI-StyleGAN2   | 2021 | Deep template inversion     | StyleGAN2                                  | Black                  | S              |
@@ -52,17 +53,18 @@ _____________
 | Deep MIA-blackbox | 2021 | Model inversion             | VAE                                        | Black                  | S              |
 | GMIA              | 2020 | Model inversion             | GAN                                        | White                  | S              |
 | AMI               | 2019 | Model inversion             | Transposed CNN                             | Black                  | S              |
-
+    
 <a name="DFS2"></a>
 #### DFS2: Adversarial Examples
+
 <p align="center">
    <img src="./pictures/Imperceptible%20Perturbations.png" width="360"><br />
-   <strong>Imperceptible Perturbations<br /><br />
+   <b>Imperceptible Perturbations</b><br /><br />
    <img src="./pictures/Adversarial%20Landmarks.png" width="360"><br />
-   <strong>Adversarial Landmarks<br /><br />
+   <b>Adversarial Landmarks</b><br /><br />
    <img src="./pictures/Adversarial%20Makeup%20Effects.png" width="360"><br />
-   <strong>Adversarial Makeup Effects<br /><br />
- <p\ >
+   <b>Adversarial Makeup Effects</b><br /><br />
+ </p>
     
 | Method            | Year | Category                    | Backbone                                   | White/Grey/Black Box   | Static/Dynamic |
 | ----------------- | ---- | --------------------------- | ------------------------------------------ | ---------------------- | -------------- |
@@ -82,9 +84,9 @@ _____________
 #### DFS3: Identity-Agnostic Faces
 <p align="center">
    <img src="./pictures/Morph%20Face.png" width="360"><br />
-   <strong>Deep Template Inversion<br /><br />
+   <b>Deep Template Inversion</b><br /><br />
    <img src="./pictures/Master%20Face.png" width="360"><br />
-   <strong>Master Face<br /><br />
+   <b>Master Face</b><br /><br />
  <p\>
     
 | Method            | Year | Category                    | Backbone                                   | White/Grey/Black Box   | Static/Dynamic |
