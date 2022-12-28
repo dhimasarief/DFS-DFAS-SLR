@@ -109,19 +109,44 @@ _____________
 #### DFAS1: DFAS asDeep Discriminative Learning
 <p align="center">
    <img src="./pictures/Single%20Modality.png" width="360"><br />
-   <strong>DFAS with Single Modality<br /><br />
+   <b>DFAS with Single Modality</b><br /><br />
    <img src="./pictures/Multi%20Modalities.png" width="360"><br />
-   <strong>DFAS with Multiple Modalities<br /><br />
+   <b>DFAS with Multiple Modalities</b><br /><br />
  <p\>
+
+| Method                      | Year | Input                         | Category                                | Backbone                                                 | Loss Function                                                             | Image/Video |
+| --------------------------- | ---- | ----------------------------- | --------------------------------------- | -------------------------------------------------------- | ------------------------------------------------------------------------- | ----------- |
+| 3DSynthesis                 | 2019 | RGB                           | Single-Modal                            | ResNet-15                                                | Binary cross entropy                                                      | I           |
+| FASNet                      | 2017 | RGB                           | Single-Modal                            | VGG-16                                                   | Binary cross entropy                                                      | V           |
+| FSD-VGGFace                 | 2021 | RGB                           | Single-Modal                            | VGG-Face                                                 | Binary cross entropy                                                      | V           |
+| FSDDense                    | 2020 | RGB                           | Single-Modal                            | DenseNet-121                                             | Binary cross entropy                                                      | V           |
+| MC-PixBiS                   | 2020 | SWIR images differences       | Multi-modal                             | DenseNet-161                                             | Binary cross entropy                                                      | V           |
+| FaceBagNet                  | 2019 | RGB, Depth, NIR face patches  | Multi-modal                             | Multi-stream CNN                                         | Binary cross entropy                                                      | V           |
+| Attention                   | 2019 | RGB, Depth, NIR               | Multi-modal                             | ResNet-18                                                | Binary cross entropy                                                      | V           |
+| PSMM-Net                    | 2019 | RGB, Depth and infrared (IR)  | Multi-modal                             | ResNet-18                                                | Binary cross entropy                                                      | V           |
+| MM-FAS                      | 2019 | RGB, Depth and infrared (IR)  | Multi-modal                             | ResNet-18/50                                             | Binary cross entropy                                                      | V           |
+| OneClass-FAS                | 2021 | Grayscale, IR, Depth, Thermal | Multi-modal           | MCCNN                                                    | Binary cross entropy and contrastive loss                                 | V           |
 
 <a name="DFAS2"></a>
 #### DFAS2: DFAS as Deep Generative Learning
 <p align="center">
    <img src="./pictures/DFAS%20AE.png" width="360"><br />
-   <strong>Auto-Encoder-based DFAS<br /><br />
+   <b>Auto-Encoder-based DFAS</b><br /><br />
    <img src="./pictures/DFAS%20GAN.png" width="360"><br />
-   <strong>GAN-based DFAS<br /><br />
+   <b>GAN-based DFAS</b><br /><br />
  <p\>
+
+| Method                      | Year | Input                         | Category                                | Backbone                                                 | Loss Function                                                             | Image/Video |
+| --------------------------- | ---- | ----------------------------- | --------------------------------------- | -------------------------------------------------------- | ------------------------------------------------------------------------- | ----------- |
+| SpoofDetAE                  | 2022 | RGB                           | Feature decomposition and reduction     | Convolutional Autoencoders+ Softmax                      | Reconstruction Loss                                                       | V           |
+| Face de-spoofing            | 2018 | RGB+HSV                       | Spoof decomposition                     | Autoencoders                                             | Magnitude Loss+Zero/One Map Los+Repetitive Loss                           | V           |
+| IQM-FAS                     | 2016 | RGB+OFM                       | Feature decomposition and integration   | Autoencoders+Softmax                                     | Binary cross entropy                                                      | V           |
+| RAE-FAS                     | 2019 | RGB                           | Live/spoof faces reconstruction         | U-Net based Autoencoders                                 | SSIM+L1 Loss                                                              | V           |
+| AAE-FAS                     | 2021 | RGB                           | Live faces reconstruction               | Autoencoders                                             | reconstruction error + attention loss                                     | V           |
+| GOGen                       | 2020 | RGB+one hot vector            | Spoof reconstruction and identification | GAN                                                      | L2 Loss                                                                   | V           |
+| STDN                        | 2020 | RGB                           | Spoof disentanglement                   | U-Net+PatchGAN                                           | ESR, Adversarial, L2, and Pixel Losses                                    | V           |
+| DR-Net                      | 2022 | RGB                           | Spoof augmentation and disentanglement  | Encoder-Decoder                                          | Identity Loss                                                             | V           |
+| STDN+                       | 2022 | RGB                           | Two-steps spoof disentanglement         | GAN+Encoder Deecoder                                     | L2, inpainting mask, adversarial, depth-map, and synthesized spoof losses | V           |
 
 <a name="DFAS3"></a>
 #### DFAS3: DFAS as Joint/Hybrid Learning
@@ -129,5 +154,39 @@ _____________
 <a name="Joint1"></a>
 ##### Joint Traditional and Deep Architectures
 
+| Method                      | Year | Input                         | Category                                | Backbone                                                 | Loss Function                                                             | Image/Video |
+| --------------------------- | ---- | ----------------------------- | --------------------------------------- | -------------------------------------------------------- | ------------------------------------------------------------------------- | ----------- |
+| CNN+SVM-FAS                 | 2019 | RGB                           | Hybrid learning                         | VGG-16+SVM                                               | SVM Loss                                                                  | V           |
+| CNN+SVM-FAS 2               | 2017 | RGB                           | Hybrid learning                         | VGG-Face+SVM                                             | SVM Loss                                                                  | V           |
+| SAESVM-FSD                  | 2016 | RGB                           | Hybrid learning                         | SAE+SVM                                                  | SVM Loss                                                                  | V           |
+| CNN+SVM-FAS 3               | 2019 | RGB                           | Hybrid learning                         | ResNet-50+SVM                                            | SVM Loss                                                                  | V           |
+| CNN-LSP                     | 2019 | RGB                           | Hybrid learning                         | 1D CNN + SVM                                             | SVM Loss                                                                  | V           |
+| Generalizaed Deep Features  | 2018 | RGB                           | Multi-scale information                 | 3D CNN                                                   | Binary cross entropy + generalization loss                                | V           |
+| CNN-LBP-TOP FAS             | 2017 | RGB                           | Hybrid learning                         | 5 Layer CNN + LBP-TOP                                    | Binary cross entropy + SVM Loss                                           | V           |
+| LBP-Pert                    | 2020 | RGB                           | Hybrid learning                         | CNN+LBP                                                  | Binary cross entropy                                                      | V           |
+| CNN-LBP-WLD                 | 2019 | RGB                           | Hybrid learning                         | CaffeNet                                                 | Binary cross entropy                                                      | V           |
+
 <a name="Joint2"></a>
 ##### Joint Multiple Deep Architectures
+
+| Method                      | Year | Input                         | Category                                | Backbone                                                 | Loss Function                                                             | Image/Video |
+| --------------------------- | ---- | ----------------------------- | --------------------------------------- | -------------------------------------------------------- | ------------------------------------------------------------------------- | ----------- |
+| DSDG+DUM                    | 2021 | RGB                           | Hybrid learning                         | CDCN                                                     | Binary cross entropy + L2 Loss                                            | V           |
+| AE-WaveCNN                  | 2019 | RGB                           | Hybrid learning                         | CNN + Autoencoders                                       | Binary cross entropy                                                      | V           |
+| FAS-Represent               | 2020 | RGB                           | Hybrid learning                         | CNN + GAN                                                | Latent Reconstruction, depth, LBP, discriminator, and generator Losses    | V           |
+| PatchNet                    | 2022 | RGB                           | Hybrid learning                         | Double Encoders                                          | Asymmetric AM-Softmax Loss, Self-Supervised Similarity Loss               | V           |
+| FRT-PAD                     | 2021 | RGB                           | Hybrid learning                         | CNN+GNN                                                  | Binary cross entropy                                                      | V           |
+| AuxSup                      | 2018 | RGB and HSV                   | Hybrid learning                         | CNN + RNN                                                | depth and rPPG loss                                                       | V           |
+| FAS-SGTD                    | 2020 | RGB                           | Hybrid learning                         | RSGB + STPM                                              | Contrastive Detph Loss                                                    | V           |
+| TransFAS                    | 2022 | RGB                           | Hybrid learning                         | Encoders with Cross-Layer Attentions                     | L2 + Contrastive Detph Loss                                               | V           |
+| Hierarchical Fusion Network (HFN) | 2022 | RGB                           | Hybrid learning                         | Residual Module + HFM                                    | Binary cross entropy + L2 Loss                                            | V           |
+| DBMNet                      | 2022 | RGB and Depth                 | Hybrid learning                         | feature embedding (FE) and depth estimating (DE) modules | binary cross-entropy and distribution alignment losses                    | V           |
+| STASN                       | 2019 | RGB                           | Multi-scale information                 | ResNet50+LSTM                                            | Binary cross entropy                                                      | V           |
+| lstm-cnn                    | 2015 | RGB                           | Multi-scale information                 | CNN+LSTM                                                 | Binary cross entropy                                                      | V           |
+| SLRNN                       | 2019 | RGB                           | Multi-scale information                 | ResNet50+LSTM                                            | Binary cross entropy                                                      | V           |
+| Temp-Motion Enhancement     | 2020 | RGB                           | Multi-scale information                 | VGG-face+LSTM                                            | Binary cross entropy                                                      | V           |
+| UltraDeep                   | 2017 | RGB                           | Multi-scale information                 | ResNet50+LSTM                                            | Binary cross entropy                                                      | V           |
+| MS-FANS                     | 2018 | RGB                           | Multi-scale information                 | AlexNet+LSTM                                             | Binary cross entropy                                                      | V           |
+| DRL-FAS                     | 2021 | RGB                           | Multi-scale information                 | ResNet-18+GRU                                            | Binary cross entropy                                                      | I           |
+| CEM-RCNN                    | 2021 | RGB                           | anomaly detection                       | RPN+RCNN                                                 | Binary cross entropy + L1 loss                                            | V           |
+| DAM                         | 2021 | RGB                           | Multi-scale information                 | VGG16, TSM                                               | Symmetry Loss                                                             | V           |
