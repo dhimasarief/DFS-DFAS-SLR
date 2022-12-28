@@ -1,4 +1,4 @@
-# 👏Review of Deep Face Spoofing and Face Anti-Spoofing🎭 #
+# 👏Review of Deep Face Spoofing and Anti-Spoofing🎭 #
 
 ![dfs_dfas](./pictures/DFS%20and%20DFAS.png)
 This is the accompanying webpage for "Deep Facial Spoofing and Deep Face Anti-Spoofing: a Systematic Literature Review", a critical review of recent progress in deep learning methods for face spoofing and anti-spoofing.
