@@ -108,16 +108,16 @@ _____________
 <p align="center">
    <img src="./pictures/Single%20Modality.png" width="360"><br />
    <strong>DFAS with Single Modality<br /><br />
-   <img src="./pictures/Multiple%20Modalities.png" width="360"><br />
+   <img src="./pictures/Multi%20Modalities.png" width="360"><br />
    <strong>DFAS with Multiple Modalities<br /><br />
  <p\>
 
 <a name="DFAS2"></a>
 #### DFAS2: DFAS as Deep Generative Learning
 <p align="center">
-   <img src="./pictures/Single%20Modality.png" width="360"><br />
+   <img src="./pictures/DFAS%20AE.png" width="360"><br />
    <strong>Auto-Encoder-based DFAS<br /><br />
-   <img src="./pictures/Multiple%20Modalities.png" width="360"><br />
+   <img src="./pictures/DFAS%20GAN.png" width="360"><br />
    <strong>GAN-based DFAS<br /><br />
  <p\>
 
