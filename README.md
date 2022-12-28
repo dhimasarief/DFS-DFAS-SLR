@@ -28,6 +28,16 @@ _____________
 <a name="DFS1"></a>
 #### 1️⃣DFS1: Template and Model Inversion
 ![tax_dfs](https://github.com/dhimasarief/DFS_DFAS/blob/main/taxonomy_dfs.png)
+| Method            | Year | Category                    | Backbone                                   | White/Grey/Black Box   | Static/Dynamic |
+| ----------------- | ---- | --------------------------- | ------------------------------------------ | ---------------------- | -------------- |
+| NbNet             | 2019 | Deep template inversion     | De-CNN                                     | Black                  | S              |
+| GHDFI-StyleGAN2   | 2021 | Deep template inversion     | StyleGAN2                                  | Black                  | S              |
+| BiohashGAN        | 2022 | Inverting binarizations     | GAN+SimHashNet                             | Black                  | S              |
+| Binary Inversion  | 2021 | Inverting binarizations     | De-CNN+FCN                                 | White                  | S              |
+| Deep MIA          | 2022 | Model inversion             | α\-GAN+Face Seed Initialization            | White                  | S              |
+| Deep MIA-blackbox | 2021 | Model inversion             | VAE                                        | Black                  | S              |
+| GMIA              | 2020 | Model inversion             | GAN                                        | White                  | S              |
+| AMI               | 2019 | Model inversion             | Transposed CNN                             | Black                  | S              |
 
 <a name="DFS2"></a>
 #### 2️⃣DFS2: Adversarial Examples
