@@ -1,6 +1,6 @@
 # 👏Review of Deep Face Spoofing and Deep Face Anti-Spoofing🎭 #
 
-![dfs_dfas](https://github.com/dhimasarief/DFS_DFAS/blob/main/DFS and DFAS.png)
+![dfs_dfas](./pictures/DFS%20and%20DFAS.png)
 This is the accompanying webpage for "Deep Facial Spoofing and Deep Face Anti-Spoofing: a Systematic Literature Review", a critical review of recent progress in deep learning methods for face spoofing and anti-spoofing.
 
 ## Introduction
@@ -10,7 +10,7 @@ We present taxonomies and provide an up-to-date and critical review of recent de
 _____________
 
 ## Contents ##
-* [Deep Face Spoofing](#Deep-Face-Spoofing)
+* [Deep Face Spoofing](#DFS)
     * [DFS1: Template and Model Inversion](#DFS1)
     * [DFS2: Adversarial Examples](#DFS2)
     * [DFS3: Identity-Agnostic Faces](#DFS3)
@@ -22,12 +22,20 @@ _____________
         * [Joint Multiple Deep Architectures](#Joint2)
         
 _____________
+
+<a name="DFS"></a>
 ### Deep Face Spoofing ####
-![tax_dfs](https://github.com/dhimasarief/DFS_DFAS/blob/main/taxonomy_dfs.png)
+<img src="./pictures/taxonomy_dfs.png" width="720">
 
 <a name="DFS1"></a>
 #### 1️⃣DFS1: Template and Model Inversion
-![tax_dfs](https://github.com/dhimasarief/DFS_DFAS/blob/main/taxonomy_dfs.png)
+<p align="center">
+   <img src="./pictures/Deep%20Template%20Reconstruction.png" width="360"><br />
+   <strong>Deep Template Inversion<br /><br />
+   <img src="./pictures/Model%20Inversion.png" width="360"><br />
+   <strong>Deep Model Inversion
+ <p\>
+    
 | Method            | Year | Category                    | Backbone                                   | White/Grey/Black Box   | Static/Dynamic |
 | ----------------- | ---- | --------------------------- | ------------------------------------------ | ---------------------- | -------------- |
 | NbNet             | 2019 | Deep template inversion     | De-CNN                                     | Black                  | S              |
